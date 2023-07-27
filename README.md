@@ -1,27 +1,20 @@
-# React + TypeScript + Vite
+# App de Visualización de Datos con React, TypeScript, Material-UI y react-force-graph
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de una aplicación de visualización de datos desarrollada con React, TypeScript, Material-UI y la librería react-force-graph. La aplicación está diseñada para demostrar el uso de APIs y bibliotecas en un contexto de prueba técnica.
 
-Currently, two official plugins are available:
+## Descripción del Proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La aplicación de visualización de datos utiliza React y TypeScript como base para la creación de la interfaz de usuario. Material-UI se ha utilizado para la implementación de los estilos y componentes visuales, proporcionando una experiencia de usuario agradable y responsive.
 
-## Expanding the ESLint configuration
+La librería `react-force-graph` se ha empleado para mostrar datos en un gráfico de fuerza interactivo. Los datos utilizados en el gráfico son proporcionados por una API externa, y los componentes `ForceGraph2D` & `ForceGraph3D` se personaliza para mostrar nodos con etiquetas y enlaces entre ellos.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+El objetivo de este proyecto es demostrar la integración de estas tecnologías y bibliotecas para crear una aplicación que visualice datos en un formato gráfico, lo que puede ser útil para mostrar relaciones entre entidades o elementos en un contexto real.
 
-- Configure the top-level `parserOptions` property like this:
+## Acerca del Autor
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Este proyecto ha sido creado por [SotopaguayJ](https://github.com/sotopaguayj) como parte de una prueba técnica sobre el uso de APIs y bibliotecas en el desarrollo de aplicaciones de visualización de datos.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
