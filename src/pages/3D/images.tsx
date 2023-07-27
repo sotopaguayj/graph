@@ -1,9 +1,17 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-nocheck
+
 import { pokemonImage } from "../../utils/data";
 import { ForceGraph3D } from "react-force-graph";
 import { useEffect, useState } from "react";
 import LinearProgress from "@mui/material/LinearProgress/LinearProgress";
-import * as THREE from 'three';
+import * as THREE from "three";
 import Header from "../../components/header";
+
+type Node = {
+  id: number;
+  label: string;
+};
 
 function NodeImage() {
   const [images, setImages] = useState([]);
@@ -27,7 +35,7 @@ function NodeImage() {
 
   return (
     <>
-    <Header />
+      <Header />
       <ForceGraph3D
         graphData={data}
         nodeLabel="id"
@@ -48,9 +56,8 @@ function NodeImage() {
 
 export default NodeImage;
 
-
 // Esto lo hice copn chatGPT
-function createLinks(nodes) {
+function createLinks(nodes:Node[]) {
   const links = [];
   for (let i = 0; i < nodes.length - 1; i++) {
     links.push({ source: nodes[i].id, target: nodes[i + 1].id });

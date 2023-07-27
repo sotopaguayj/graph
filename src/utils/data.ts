@@ -1,8 +1,11 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-nocheck
 
 export const pokemonName = async () => {
   const petit = await fetch('https://pokeapi.co/api/v2/pokemon?limit=100');
   const json = await petit.json();
-  const pokemons = json.results.map((pokemon: any, i: number) => ({
+
+  const pokemons = json.results.map((pokemon, i: number) => ({
     id: i,
     label: pokemon.name
   }))

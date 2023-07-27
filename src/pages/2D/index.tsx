@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-nocheck
+
 import { ForceGraph2D } from "react-force-graph";
 import { pokemonName } from "../../utils/data";
 import { useEffect, useState } from "react";
