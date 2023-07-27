@@ -5,10 +5,6 @@ Este es un proyecto de una aplicación de visualización de datos desarrollada c
 
 ## Ejecución
 
-Una vez que hayas instalado las dependencias, puedes ejecutar la aplicación utilizando el siguiente comando:
-
-Esto iniciará la aplicación en modo de desarrollo. Abre tu navegador y ve a `http://localhost:3000` para ver la aplicación en acción.
-
 ## Descripción del Proyecto
 
 La aplicación de visualización de datos utiliza React y TypeScript como base para la creación de la interfaz de usuario. Material-UI se ha utilizado para la implementación de los estilos y componentes visuales, proporcionando una experiencia de usuario agradable y responsive.
