@@ -31,7 +31,7 @@ function NodeImage() {
       <ForceGraph3D
         graphData={data}
         nodeLabel="id"
-        backgroundColor="#FFF"
+        backgroundColor="#000"
         nodeThreeObject={({ img }) => {
           const imgTexture = new THREE.TextureLoader().load(img);
           imgTexture.colorSpace = THREE.SRGBColorSpace;
